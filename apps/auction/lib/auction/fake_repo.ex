@@ -7,6 +7,12 @@ defmodule Auction.FakeRepo do
       title: "My First Item",
       description: "A tasy item sure to please",
       ends_at: ~N[2020-01-01 00:00:00]
+    },
+    %Item{
+      id: 2,
+      title: "Ben Hur",
+      description: "Classic.  Totally awesome.  Don't even talk to me about the movie.",
+      ends_at: ~N[2020-02-02 02:02:02]
     }
   ]
 
