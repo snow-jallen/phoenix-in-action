@@ -1,0 +1,9 @@
+<h1><%= @item.title %></h1>
+
+<table>
+<tr><td><strong>Description</strong></td><td><%= @item.description %></td></tr>
+<tr><td><strong>Auction ends at</strong></td><td><%= @item.ends_at %></td></tr>
+</table>
+
+<%= link("Back to list", to: Routes.item_path(@conn, :index)) %> |
+<%= link("Edit", to: Routes.item_path(@conn, :edit, @item.id)) %>
